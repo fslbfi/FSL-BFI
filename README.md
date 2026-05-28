@@ -116,13 +116,13 @@ python main.py 11ax_SU_4x2_160.pcapng AX SU 4x2 160 \
 ```
 
 > **Arguments**  
->  `<standard>`: `AC` / `AX`
->  `<mimo>`: `SU` / `MU`
->  `<antenna-config>`: `4x2`, `4x1`, `3x3`, `3x2`, `3x1`
->  `<bandwidth>`: `160` (AX only), `80`, `40`, `20`
->  `<mac_address>`: beamformee MAC
->  `<packet_count>`: how many packets to process (available)
->  Output files: names for Vmatrices and BFAs
+>  `<standard>`: `AC` / `AX`  
+>  `<mimo>`: `SU` / `MU`  
+>  `<antenna-config>`: `4x2`, `4x1`, `3x3`, `3x2`, `3x1`  
+>  `<bandwidth>`: `160` (AX only), `80`, `40`, `20`  
+>  `<mac_address>`: beamformee MAC  
+>  `<packet_count>`: how many packets to process (available)  
+>  Output files: names for Vmatrices and BFAs  
 
 ---
 ## ⚖️ Licensing
