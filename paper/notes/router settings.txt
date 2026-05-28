@@ -1,0 +1,5 @@
+ROUTER SETTINGS:
+Channel bandwidth = 80 MHz (Auto)
+Control Channel = 64 (Auto)
+Auth Method = WPA2-Personal (WPA3-Personal)
+Protected Management Frames = Disable (Enable)

@@ -1,0 +1,35 @@
+[project]
+name = "fsl-bfi"
+version = "0.1.0"
+description = "Binary occupancy detection from Wi-Fi BFI using ProtoNet few-shot learning"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    # Core scientific stack
+    "numpy>=1.26",
+    "scipy>=1.11",            # nb4 Mann-Whitney U + Bonferroni
+    "scikit-learn>=1.3",      # nb3/nb4 average_precision_score
+    "matplotlib>=3.8",
+    "tqdm>=4.66",
+    # Deep learning (CPU build by default; see README for CUDA install)
+    "torch>=2.1",
+    # Jupyter
+    "jupyterlab>=4.0",
+    "ipykernel>=6.27",
+    # Pcap extraction (main.py, main_extract_batch.py)
+    "pyshark>=0.6",
+    # Misc utilities
+    "appdirs>=1.4",
+    "termcolor>=2.3",
+]
+
+[project.optional-dependencies]
+# Required only for main_live_plot.py (real-time GUI plotter).
+# Notebooks and headless extraction do not need these.
+# Install with: `uv sync --extra gui`
+gui = [
+    "freesimplegui>=5.1",
+    "pyqt5>=5.15,<5.16",
+]
+
+[tool.uv]
+package = false

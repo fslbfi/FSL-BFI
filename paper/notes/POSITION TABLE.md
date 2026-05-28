@@ -1,0 +1,22 @@
+M7:
+1. 1.5 M (DISTANCE) 0.75 M (HEIGHT)
+2. 3.0 M (DISTANCE) 0.9 M (HEIGHT)
+3. 2.5 M (DISTANCE) 0.85 M (HEIGHT)
+
+X7:
+1. 2.6 M (DISTANCE) 0.6 M (HEIGHT)
+2. 1.2 M (DISTANCE) 1.6 M (HEIGHT)
+3. 4.1 M (DISTANCE) 1.8 M (HEIGHT)
+
+X300:
+1. 2.4 M (DISTANCE) 0.85 M (HEIGHT)
+2. 0.7 M (DISTANCE) 0.75 M (HEIGHT) 
+3. 4.5 M (DISTANCE) 0.9 M (HEIGHT)
+
+SNIFFER:
+0.67 M (DISTANCE) 0.75 M (HEIGHT)
+
+ROUTER:
+0.00 M (DISTANCE) 1.00 M (HEIGHT)
+
+The distance is relative to the router, while the height is how far up it is from the ground.

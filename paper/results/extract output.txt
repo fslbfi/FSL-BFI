@@ -1,0 +1,493 @@
+> python .\main_extract_batch.py --dir D:/Thesis/data
+============================================================
+ Batch BFI Extractor  [pre-filter by BFI subtype + MAC split, parallel device mode]
+ Sampling   : full post-trim frames per device
+ Trim start : 30s
+ Trim end   : 30s
+ Trace dir  : D:/Thesis/data
+ Output dir : ./data
+ Workers    : 3 (one per device)
+============================================================
+
+────────────────────────────────────────────────────────────
+ Trace    : empty.pcapng
+ Scenario : empty
+────────────────────────────────────────────────────────────
+ Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmph_1ep0sz.pcapng
+ Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmpkxun78q2.pcapng
+ Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmp1r2lfm_z.pcapng
+ Pre-filter done [59s]  2554.3 MB -> 0.5 MB (0.0% of original)
+ Pre-filter done [59s]  2554.3 MB -> 0.4 MB (0.0% of original)
+ Pre-filter done [1m 00s]  2554.3 MB -> 0.3 MB (0.0% of original)
+ [14:49:42] Starting 3 devices in parallel...
+  [M7] Pass 1 scanning:  413 BFI frames [0s]
+  [M7] BFI frames found: 413
+  [M7] After trim (30s/30s): 371 packets [30.0s – 571.0s of session]
+  [M7] Pass 1b fetching: 1/1 chunks [3s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  371 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\M7\vmatrix_empty_M7.npy
+  [M7] Pass 2 extracting: 371/371 pkt [29s]
+  [M7] Saved 371 V-matrices -> ./data\M7\vmatrix_empty_M7.npy
+  [M7] Total device time: 33s
+ [14:50:16] M7 done.
+  [X300] Pass 1 scanning:  366 BFI frames [0s]
+  [X300] BFI frames found: 366
+  [X300] After trim (30s/30s): 339 packets [30.0s – 588.8s of session]
+  [X300] Pass 1b fetching: 1/1 chunks [4s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  339 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X300\vmatrix_empty_X300.npy
+  [X300] Pass 2 extracting: 339/339 pkt [33s]
+  [X300] Saved 339 V-matrices -> ./data\X300\vmatrix_empty_X300.npy
+  [X300] Total device time: 39s
+ [14:50:22] X300 done.
+  [X7] Pass 1 scanning:  483 BFI frames [0s]
+  [X7] BFI frames found: 483
+  [X7] After trim (30s/30s): 379 packets [30.0s – 581.6s of session]
+  [X7] Pass 1b fetching: 1/1 chunks [5s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  379 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X7\vmatrix_empty_X7.npy
+  [X7] Pass 2 extracting: 379/379 pkt [33s]
+  [X7] Saved 379 V-matrices -> ./data\X7\vmatrix_empty_X7.npy
+  [X7] Total device time: 40s
+ [14:50:22] X7 done.
+ Temp file removed for M7: \AppData\Local\Temp\tmph_1ep0sz.pcapng
+ Temp file removed for X7: \AppData\Local\Temp\tmpkxun78q2.pcapng
+ Temp file removed for X300: \AppData\Local\Temp\tmp1r2lfm_z.pcapng
+
+============================================================
+
+────────────────────────────────────────────────────────────
+ Trace    : stationary.pcapng
+ Scenario : stationary
+────────────────────────────────────────────────────────────
+ Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmpkir9im7u.pcapng
+ Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmp81ny0nx5.pcapng
+ Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmprgr0l6nm.pcapng
+ Pre-filter done [1m 02s]  2624.8 MB -> 0.3 MB (0.0% of original)
+ Pre-filter done [1m 02s]  2624.8 MB -> 0.4 MB (0.0% of original)
+ Pre-filter done [1m 03s]  2624.8 MB -> 0.4 MB (0.0% of original)
+ [14:51:26] Starting 3 devices in parallel...
+  [M7] Pass 1 scanning:  412 BFI frames [0s]
+  [M7] BFI frames found: 412
+  [M7] After trim (30s/30s): 388 packets [30.0s – 689.8s of session]
+  [M7] Pass 1b fetching: 1/1 chunks [2s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  388 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\M7\vmatrix_stationary_M7.npy
+  [M7] Pass 2 extracting: 388/388 pkt [22s]
+  [M7] Corrupted/skipped during extraction: 2
+  [M7] Saved 386 V-matrices -> ./data\M7\vmatrix_stationary_M7.npy
+  [M7] Total device time: 26s
+ [14:51:52] M7 done.
+  [X7] Pass 1 scanning:  409 BFI frames [0s]
+  [X7] BFI frames found: 409
+  [X7] After trim (30s/30s): 384 packets [30.0s – 662.5s of session]
+  [X7] Pass 1b fetching: 1/1 chunks [4s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  384 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X7\vmatrix_stationary_X7.npy
+  [X7] Pass 2 extracting: 384/384 pkt [29s]
+  [X7] Saved 384 V-matrices -> ./data\X7\vmatrix_stationary_X7.npy
+  [X7] Total device time: 34s
+ [14:52:01] X7 done.
+  [X300] Pass 1 scanning:  398 BFI frames [0s]
+  [X300] BFI frames found: 398
+  [X300] After trim (30s/30s): 373 packets [30.0s – 592.6s of session]
+  [X300] Pass 1b fetching: 1/1 chunks [6s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  373 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X300\vmatrix_stationary_X300.npy
+  [X300] Pass 2 extracting: 373/373 pkt [28s]
+  [X300] Saved 373 V-matrices -> ./data\X300\vmatrix_stationary_X300.npy
+  [X300] Total device time: 34s
+ [14:52:01] X300 done.
+ Temp file removed for M7: \AppData\Local\Temp\tmpkir9im7u.pcapng
+ Temp file removed for X7: \AppData\Local\Temp\tmp81ny0nx5.pcapng
+ Temp file removed for X300: \AppData\Local\Temp\tmprgr0l6nm.pcapng
+
+============================================================
+
+────────────────────────────────────────────────────────────
+ Trace    : moving.pcapng
+ Scenario : moving
+────────────────────────────────────────────────────────────
+ Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmp35i35nnw.pcapng
+ Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmp29tgbdx0.pcapng
+ Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmpuv07236f.pcapng
+ Pre-filter done [1m 04s]  2652.8 MB -> 0.2 MB (0.0% of original)
+ Pre-filter done [1m 04s]  2652.8 MB -> 1.5 MB (0.1% of original)
+ Pre-filter done [1m 04s]  2652.8 MB -> 0.3 MB (0.0% of original)
+ [14:53:05] Starting 3 devices in parallel...
+  [X300] Pass 1 scanning:  228 BFI frames [0s]
+  [X300] BFI frames found: 228
+  [X300] After trim (30s/30s): 205 packets [30.0s – 584.0s of session]
+  [X300] Pass 1b fetching: 1/1 chunks [1s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  205 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X300\vmatrix_moving_X300.npy
+  [X300] Pass 2 extracting: 205/205 pkt [10s]
+  [X300] Saved 205 V-matrices -> ./data\X300\vmatrix_moving_X300.npy
+  [X300] Total device time: 13s
+ [14:53:18] X300 done.
+  [M7] Pass 1 scanning:  373 BFI frames [0s]
+  [M7] BFI frames found: 373
+  [M7] After trim (30s/30s): 335 packets [30.0s – 573.7s of session]
+  [M7] Pass 1b fetching: 1/1 chunks [2s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  335 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\M7\vmatrix_moving_M7.npy
+  [M7] Pass 2 extracting: 335/335 pkt [11s]
+  [M7] Saved 335 V-matrices -> ./data\M7\vmatrix_moving_M7.npy
+  [M7] Total device time: 14s
+ [14:53:20] M7 done.
+  [X7] Pass 1 scanning:  1522 BFI frames [0s]
+  [X7] BFI frames found: 1522
+  [X7] After trim (30s/30s): 1440 packets [30.0s – 587.4s of session]
+  [X7] Pass 1b fetching: 3/3 chunks [19s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction: 1440 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X7\vmatrix_moving_X7.npy
+  [X7] Pass 2 extracting: 1440/1440 pkt [32s]
+  [X7] Saved 1440 V-matrices -> ./data\X7\vmatrix_moving_X7.npy
+  [X7] Total device time: 53s
+ [14:53:59] X7 done.
+ Temp file removed for M7: \AppData\Local\Temp\tmp29tgbdx0.pcapng
+ Temp file removed for X7: \AppData\Local\Temp\tmp35i35nnw.pcapng
+ Temp file removed for X300: \AppData\Local\Temp\tmpuv07236f.pcapng
+
+============================================================
+
+────────────────────────────────────────────────────────────
+ Trace    : empty-2.pcapng
+ Scenario : empty-2
+────────────────────────────────────────────────────────────
+ Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmpckzv7l8c.pcapng
+ Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmpvecfbea2.pcapng
+ Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmpgtvi1511.pcapng
+ Pre-filter done [1m 04s]  2669.0 MB -> 0.3 MB (0.0% of original)
+ Pre-filter done [1m 05s]  2669.0 MB -> 0.4 MB (0.0% of original)
+ Pre-filter done [1m 05s]  2669.0 MB -> 0.4 MB (0.0% of original)
+ [14:55:04] Starting 3 devices in parallel...
+  [M7] Pass 1 scanning:  404 BFI frames [0s]
+  [M7] BFI frames found: 404
+  [M7] After trim (30s/30s): 361 packets [30.0s – 569.0s of session]
+  [M7] Pass 1b fetching: 1/1 chunks [2s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  361 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\M7\vmatrix_empty-2_M7.npy
+  [M7] Pass 2 extracting: 361/361 pkt [24s]
+  [M7] Saved 361 V-matrices -> ./data\M7\vmatrix_empty-2_M7.npy
+  [M7] Total device time: 27s
+ [14:55:32] M7 done.
+  [X300] Pass 1 scanning:  377 BFI frames [0s]
+  [X300] BFI frames found: 377
+  [X300] After trim (30s/30s): 344 packets [30.0s – 568.7s of session]
+  [X300] Pass 1b fetching: 1/1 chunks [5s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  344 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X300\vmatrix_empty-2_X300.npy
+  [X300] Pass 2 extracting: 344/344 pkt [27s]
+  [X300] Saved 344 V-matrices -> ./data\X300\vmatrix_empty-2_X300.npy
+  [X300] Total device time: 34s
+ [14:55:39] X300 done.
+  [X7] Pass 1 scanning:  401 BFI frames [0s]
+  [X7] BFI frames found: 401
+  [X7] After trim (30s/30s): 364 packets [30.0s – 572.2s of session]
+  [X7] Pass 1b fetching: 1/1 chunks [4s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  364 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X7\vmatrix_empty-2_X7.npy
+  [X7] Pass 2 extracting: 364/364 pkt [28s]
+  [X7] Saved 364 V-matrices -> ./data\X7\vmatrix_empty-2_X7.npy
+  [X7] Total device time: 34s
+ [14:55:39] X7 done.
+ Temp file removed for M7: \AppData\Local\Temp\tmpvecfbea2.pcapng
+ Temp file removed for X7: \AppData\Local\Temp\tmpckzv7l8c.pcapng
+ Temp file removed for X300: \AppData\Local\Temp\tmpgtvi1511.pcapng
+
+============================================================
+
+────────────────────────────────────────────────────────────
+ Trace    : stationary-2.pcapng
+ Scenario : stationary-2
+────────────────────────────────────────────────────────────
+ Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmpej106cpm.pcapng
+ Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmpx8_zvt0b.pcapng
+ Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmp5nacuufu.pcapng
+ Pre-filter done [58s]  2544.7 MB -> 0.4 MB (0.0% of original)
+ Pre-filter done [59s]  2544.7 MB -> 0.3 MB (0.0% of original)
+ Pre-filter done [59s]  2544.7 MB -> 0.4 MB (0.0% of original)
+ [14:56:38] Starting 3 devices in parallel...
+  [M7] Pass 1 scanning:  393 BFI frames [0s]
+  [M7] BFI frames found: 393
+  [M7] After trim (30s/30s): 355 packets [30.0s – 574.5s of session]
+  [M7] Pass 1b fetching: 1/1 chunks [2s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  355 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\M7\vmatrix_stationary-2_M7.npy
+  [M7] Pass 2 extracting: 355/355 pkt [16s]
+  [M7] Saved 355 V-matrices -> ./data\M7\vmatrix_stationary-2_M7.npy
+  [M7] Total device time: 19s
+ [14:56:57] M7 done.
+  [X300] Pass 1 scanning:  357 BFI frames [0s]
+  [X300] BFI frames found: 357
+  [X300] After trim (30s/30s): 319 packets [30.0s – 568.9s of session]
+  [X300] Pass 1b fetching: 1/1 chunks [3s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  319 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X300\vmatrix_stationary-2_X300.npy
+  [X300] Pass 2 extracting: 319/319 pkt [21s]
+  [X300] Saved 319 V-matrices -> ./data\X300\vmatrix_stationary-2_X300.npy
+  [X300] Total device time: 26s
+ [14:57:04] X300 done.
+  [X7] Pass 1 scanning:  397 BFI frames [0s]
+  [X7] BFI frames found: 397
+  [X7] After trim (30s/30s): 359 packets [30.0s – 579.3s of session]
+  [X7] Pass 1b fetching: 1/1 chunks [4s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  359 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X7\vmatrix_stationary-2_X7.npy
+  [X7] Pass 2 extracting: 359/359 pkt [21s]
+  [X7] Saved 359 V-matrices -> ./data\X7\vmatrix_stationary-2_X7.npy
+  [X7] Total device time: 26s
+ [14:57:04] X7 done.
+ Temp file removed for M7: \AppData\Local\Temp\tmp5nacuufu.pcapng
+ Temp file removed for X7: \AppData\Local\Temp\tmpej106cpm.pcapng
+ Temp file removed for X300: \AppData\Local\Temp\tmpx8_zvt0b.pcapng
+
+============================================================
+
+────────────────────────────────────────────────────────────
+ Trace    : moving-2.pcapng
+ Scenario : moving-2
+────────────────────────────────────────────────────────────
+ Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmplr1e6155.pcapng
+ Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmpxz07d60g.pcapng
+ Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmp4_kqvrny.pcapng
+ Pre-filter done [52s]  2617.6 MB -> 0.3 MB (0.0% of original)
+ Pre-filter done [53s]  2617.6 MB -> 0.4 MB (0.0% of original)
+ Pre-filter done [53s]  2617.6 MB -> 0.4 MB (0.0% of original)
+ [14:57:57] Starting 3 devices in parallel...
+  [M7] Pass 1 scanning:  414 BFI frames [0s]
+  [M7] BFI frames found: 414
+  [M7] After trim (30s/30s): 375 packets [30.0s – 578.2s of session]
+  [M7] Pass 1b fetching: 1/1 chunks [2s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  375 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\M7\vmatrix_moving-2_M7.npy
+  [M7] Pass 2 extracting: 375/375 pkt [22s]
+  [M7] Saved 375 V-matrices -> ./data\M7\vmatrix_moving-2_M7.npy
+  [M7] Total device time: 25s
+ [14:58:23] M7 done.
+  [X7] Pass 1 scanning:  416 BFI frames [0s]
+  [X7] BFI frames found: 416
+  [X7] After trim (30s/30s): 374 packets [30.0s – 578.0s of session]
+  [X7] Pass 1b fetching: 1/1 chunks [3s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  374 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X7\vmatrix_moving-2_X7.npy
+  [X7] Pass 2 extracting: 374/374 pkt [28s]
+  [X7] Saved 374 V-matrices -> ./data\X7\vmatrix_moving-2_X7.npy
+  [X7] Total device time: 32s
+ [14:58:30] X7 done.
+  [X300] Pass 1 scanning:  407 BFI frames [0s]
+  [X300] BFI frames found: 407
+  [X300] After trim (30s/30s): 365 packets [30.0s – 566.5s of session]
+  [X300] Pass 1b fetching: 1/1 chunks [4s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  365 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X300\vmatrix_moving-2_X300.npy
+  [X300] Pass 2 extracting: 365/365 pkt [27s]
+  [X300] Saved 365 V-matrices -> ./data\X300\vmatrix_moving-2_X300.npy
+  [X300] Total device time: 32s
+ [14:58:30] X300 done.
+ Temp file removed for M7: \AppData\Local\Temp\tmplr1e6155.pcapng
+ Temp file removed for X7: \AppData\Local\Temp\tmpxz07d60g.pcapng
+ Temp file removed for X300: \AppData\Local\Temp\tmp4_kqvrny.pcapng
+
+============================================================
+
+────────────────────────────────────────────────────────────
+ Trace    : empty-3.pcapng
+ Scenario : empty-3
+────────────────────────────────────────────────────────────
+ Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmps76hleoy.pcapng
+ Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmpiktgi6vg.pcapng
+ Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmpens6_8iu.pcapng
+ Pre-filter done [55s]  2703.5 MB -> 0.8 MB (0.0% of original)
+ Pre-filter done [55s]  2703.5 MB -> 0.3 MB (0.0% of original)
+ Pre-filter done [55s]  2703.5 MB -> 0.3 MB (0.0% of original)
+ [14:59:26] Starting 3 devices in parallel...
+  [M7] Pass 1 scanning:  401 BFI frames [0s]
+  [M7] BFI frames found: 401
+  [M7] After trim (30s/30s): 361 packets [30.0s – 574.6s of session]
+  [M7] Pass 1b fetching: 1/1 chunks [2s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  361 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\M7\vmatrix_empty-3_M7.npy
+  [M7] Pass 2 extracting: 361/361 pkt [14s]
+  [M7] Saved 361 V-matrices -> ./data\M7\vmatrix_empty-3_M7.npy
+  [M7] Total device time: 17s
+ [14:59:43] M7 done.
+  [X300] Pass 1 scanning:  299 BFI frames [0s]
+  [X300] BFI frames found: 299
+  [X300] After trim (30s/30s): 272 packets [30.0s – 560.3s of session]
+  [X300] Pass 1b fetching: 1/1 chunks [1s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  272 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X300\vmatrix_empty-3_X300.npy
+  [X300] Pass 2 extracting: 272/272 pkt [17s]
+  [X300] Saved 272 V-matrices -> ./data\X300\vmatrix_empty-3_X300.npy
+  [X300] Total device time: 19s
+ [14:59:45] X300 done.
+  [X7] Pass 1 scanning:  776 BFI frames [0s]
+  [X7] BFI frames found: 776
+  [X7] After trim (30s/30s): 684 packets [30.0s – 576.9s of session]
+  [X7] Pass 1b fetching: 2/2 chunks [10s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  684 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X7\vmatrix_empty-3_X7.npy
+  [X7] Pass 2 extracting: 684/684 pkt [19s]
+  [X7] Saved 684 V-matrices -> ./data\X7\vmatrix_empty-3_X7.npy
+  [X7] Total device time: 30s
+ [14:59:56] X7 done.
+ Temp file removed for M7: \AppData\Local\Temp\tmps76hleoy.pcapng
+ Temp file removed for X7: \AppData\Local\Temp\tmpiktgi6vg.pcapng
+ Temp file removed for X300: \AppData\Local\Temp\tmpens6_8iu.pcapng
+
+============================================================
+
+────────────────────────────────────────────────────────────
+ Trace    : stationary-3.pcapng
+ Scenario : stationary-3
+────────────────────────────────────────────────────────────
+ Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmp7bel_ery.pcapng
+ Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmpr42hvdus.pcapng
+ Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmp02dtl_bx.pcapng
+ Pre-filter done [49s]  2527.1 MB -> 0.4 MB (0.0% of original)
+ Pre-filter done [49s]  2527.1 MB -> 0.8 MB (0.0% of original)
+ Pre-filter done [50s]  2527.1 MB -> 0.3 MB (0.0% of original)
+ [15:00:47] Starting 3 devices in parallel...
+  [M7] Pass 1 scanning:  407 BFI frames [0s]
+  [M7] BFI frames found: 407
+  [M7] After trim (30s/30s): 366 packets [30.0s – 571.8s of session]
+  [M7] Pass 1b fetching: 1/1 chunks [2s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  366 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\M7\vmatrix_stationary-3_M7.npy
+  [M7] Pass 2 extracting: 366/366 pkt [17s]
+  [M7] Saved 366 V-matrices -> ./data\M7\vmatrix_stationary-3_M7.npy
+  [M7] Total device time: 20s
+ [15:01:07] M7 done.
+  [X300] Pass 1 scanning:  345 BFI frames [0s]
+  [X300] BFI frames found: 345
+  [X300] After trim (30s/30s): 312 packets [30.0s – 564.5s of session]
+  [X300] Pass 1b fetching: 1/1 chunks [3s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  312 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X300\vmatrix_stationary-3_X300.npy
+  [X300] Pass 2 extracting: 312/312 pkt [20s]
+  [X300] Saved 312 V-matrices -> ./data\X300\vmatrix_stationary-3_X300.npy
+  [X300] Total device time: 24s
+ [15:01:12] X300 done.
+  [X7] Pass 1 scanning:  760 BFI frames [0s]
+  [X7] BFI frames found: 760
+  [X7] After trim (30s/30s): 543 packets [30.0s – 569.7s of session]
+  [X7] Pass 1b fetching: 2/2 chunks [8s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  543 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X7\vmatrix_stationary-3_X7.npy
+  [X7] Pass 2 extracting: 543/543 pkt [20s]
+  [X7] Saved 543 V-matrices -> ./data\X7\vmatrix_stationary-3_X7.npy
+  [X7] Total device time: 30s
+ [15:01:17] X7 done.
+ Temp file removed for M7: \AppData\Local\Temp\tmp7bel_ery.pcapng
+ Temp file removed for X7: \AppData\Local\Temp\tmpr42hvdus.pcapng
+ Temp file removed for X300: \AppData\Local\Temp\tmp02dtl_bx.pcapng
+
+============================================================
+
+────────────────────────────────────────────────────────────
+ Trace    : moving-3.pcapng
+ Scenario : moving-3
+────────────────────────────────────────────────────────────
+ Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmpe4qj2jhl.pcapng
+ Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmpivvlry8v.pcapng
+ Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmptb26fvb_.pcapng
+ Pre-filter done [59s]  2734.1 MB -> 0.3 MB (0.0% of original)
+ Pre-filter done [59s]  2734.1 MB -> 0.3 MB (0.0% of original)
+ Pre-filter done [59s]  2734.1 MB -> 20.0 MB (0.7% of original)
+ [15:02:17] Starting 3 devices in parallel...
+  [X300] Pass 1 scanning:  270 BFI frames [0s]
+  [X300] BFI frames found: 270
+  [X300] After trim (30s/30s): 240 packets [30.0s – 566.8s of session]
+  [X300] Pass 1b fetching: 1/1 chunks [2s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  240 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X300\vmatrix_moving-3_X300.npy
+  [X300] Pass 2 extracting: 240/240 pkt [7s]
+  [X300] Saved 240 V-matrices -> ./data\X300\vmatrix_moving-3_X300.npy
+  [X300] Total device time: 10s
+ [15:02:27] X300 done.
+  [M7] Pass 1 scanning:  373 BFI frames [0s]
+  [M7] BFI frames found: 373
+  [M7] After trim (30s/30s): 335 packets [30.0s – 572.0s of session]
+  [M7] Pass 1b fetching: 1/1 chunks [5s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction:  335 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\M7\vmatrix_moving-3_M7.npy
+  [M7] Pass 2 extracting: 335/335 pkt [6s]
+  [M7] Saved 335 V-matrices -> ./data\M7\vmatrix_moving-3_M7.npy
+  [M7] Total device time: 13s
+ [15:02:30] M7 done.
+  [X7] Pass 1 scanning:  19672 BFI frames [6s]
+  [X7] BFI frames found: 19672
+  [X7] After trim (30s/30s): 18159 packets [30.0s – 585.3s of session]
+  [X7] Pass 1b fetching: 37/37 chunks [6m 13s]
+  ┌─────────────────────────────────────────────┐
+  │ Packets entering V-matrix extraction: 18159 │
+  └─────────────────────────────────────────────┘
+  Output -> ./data\X7\vmatrix_moving-3_X7.npy
+  [X7] Pass 2 extracting: 18159/18159 pkt [5m 40s]
+  [X7] Saved 18159 V-matrices -> ./data\X7\vmatrix_moving-3_X7.npy
+  [X7] Total device time: 12m 02s
+ [15:14:19] X7 done.
+ Temp file removed for M7: \AppData\Local\Temp\tmpe4qj2jhl.pcapng
+ Temp file removed for X7: \AppData\Local\Temp\tmpivvlry8v.pcapng
+ Temp file removed for X300: \AppData\Local\Temp\tmptb26fvb_.pcapng
+
+============================================================
+
+============================================================
+ All done. Total elapsed: 25m 37s
+ Output in: ./data
+============================================================
