@@ -1,0 +1,32 @@
+[
+  {
+    "comparison": "K=1 vs K=3",
+    "metric": "F1",
+    "n_folds": 9,
+    "w_stat": 0.0,
+    "p_value": 0.001953125,
+    "significant": true,
+    "bonferroni_alpha": 0.016666666666666666,
+    "alternative": "less (one-sided)"
+  },
+  {
+    "comparison": "K=3 vs K=5",
+    "metric": "F1",
+    "n_folds": 9,
+    "w_stat": 1.0,
+    "p_value": 0.00390625,
+    "significant": true,
+    "bonferroni_alpha": 0.016666666666666666,
+    "alternative": "less (one-sided)"
+  },
+  {
+    "comparison": "K=5 vs K=10",
+    "metric": "F1",
+    "n_folds": 9,
+    "w_stat": 20.0,
+    "p_value": 0.41015625,
+    "significant": false,
+    "bonferroni_alpha": 0.016666666666666666,
+    "alternative": "less (one-sided)"
+  }
+]

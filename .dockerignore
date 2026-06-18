@@ -1,0 +1,23 @@
+.git
+.gitignore
+.venv
+__pycache__/
+*.pyc
+
+# Mounted as volumes at runtime, no need to bake into the image
+data/
+checkpoints/
+
+# Not needed by the realtime app
+Appendices/
+Demo/
+Images/
+Notes/
+RRL/
+results/
+samples/
+scripts/
+*.ipynb
+*.pcap
+*.pcapng
+uv.lock

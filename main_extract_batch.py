@@ -1,19 +1,16 @@
 """
-Modified from Wi-BFI (https://github.com/kfoysalhaque/Wi-BFI)
-Copyright (C) 2026 Carl Bryant A. Carlos, Paolo Noel M. De Chavez, Jacob O. Duldulao
-
+Copyright (C) 2023 Khandaker Foysal Haque
+contact: haque.k@northeastern.edu
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
-
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
-
 You should have received a copy of the GNU General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
+along with this program. If not, see <https://www.gnu.org/licenses/>.
 """
 import os
 import time
@@ -484,7 +481,7 @@ if __name__ == '__main__':
 
     print('=' * 60)
     print(f' Batch BFI Extractor  [pre-filter by BFI subtype + MAC split, parallel device mode]')
-    print(f' Sampling   : full post-trim frames per device')
+    print(f' Sampling   : full post-trim frames per device (no time-bin, no cross-device sync)')
     print(f' Trim start : {args.trim_start}s')
     print(f' Trim end   : {args.trim_end}s')
     print(f' Trace dir  : {args.dir}')

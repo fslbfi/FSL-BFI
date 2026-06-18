@@ -1,0 +1,32 @@
+[
+  {
+    "comparison": "K=1 vs K=3",
+    "metric": "PR-AUC",
+    "n_folds": 9,
+    "w_stat": 4.0,
+    "p_value": 0.013671875,
+    "significant": true,
+    "bonferroni_alpha": 0.016666666666666666,
+    "alternative": "less (one-sided)"
+  },
+  {
+    "comparison": "K=3 vs K=5",
+    "metric": "PR-AUC",
+    "n_folds": 9,
+    "w_stat": 2.0,
+    "p_value": 0.01171875,
+    "significant": true,
+    "bonferroni_alpha": 0.016666666666666666,
+    "alternative": "less (one-sided)"
+  },
+  {
+    "comparison": "K=5 vs K=10",
+    "metric": "PR-AUC",
+    "n_folds": 9,
+    "w_stat": 2.0,
+    "p_value": 0.01171875,
+    "significant": true,
+    "bonferroni_alpha": 0.016666666666666666,
+    "alternative": "less (one-sided)"
+  }
+]

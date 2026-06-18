@@ -17,6 +17,10 @@ dependencies = [
     "ipykernel>=6.27",
     # Pcap extraction (main.py, main_extract_batch.py)
     "pyshark>=0.6",
+    # Real-time web app (realtime_app/)
+    "fastapi>=0.104",
+    "uvicorn[standard]>=0.24",
+    "websockets>=12.0",
     # Misc utilities
     "appdirs>=1.4",
     "termcolor>=2.3",

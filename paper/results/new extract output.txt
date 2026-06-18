@@ -1,7 +1,8 @@
-> python .\main_extract_batch.py --dir D:/Thesis/data
+python .\main_extract_batch.py --dir D:/Thesis/data
+(fsl-bfi) PS C:\Users\ghosty\Desktop\FSL-BFI> python .\main_extract_batch.py --dir D:/Thesis/data
 ============================================================
  Batch BFI Extractor  [pre-filter by BFI subtype + MAC split, parallel device mode]
- Sampling   : full post-trim frames per device
+ Sampling   : full post-trim frames per device (no time-bin, no cross-device sync)
  Trim start : 30s
  Trim end   : 30s
  Trace dir  : D:/Thesis/data
@@ -13,9 +14,9 @@
  Trace    : empty.pcapng
  Scenario : empty
 ────────────────────────────────────────────────────────────
- Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmph_1ep0sz.pcapng
- Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmpkxun78q2.pcapng
- Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmp1r2lfm_z.pcapng
+ Pre-filtering BFI for M7 -> C:\Users\ghosty\AppData\Local\Temp\tmph_1ep0sz.pcapng
+ Pre-filtering BFI for X7 -> C:\Users\ghosty\AppData\Local\Temp\tmpkxun78q2.pcapng
+ Pre-filtering BFI for X300 -> C:\Users\ghosty\AppData\Local\Temp\tmp1r2lfm_z.pcapng
  Pre-filter done [59s]  2554.3 MB -> 0.5 MB (0.0% of original)
  Pre-filter done [59s]  2554.3 MB -> 0.4 MB (0.0% of original)
  Pre-filter done [1m 00s]  2554.3 MB -> 0.3 MB (0.0% of original)
@@ -56,9 +57,9 @@
   [X7] Saved 379 V-matrices -> ./data\X7\vmatrix_empty_X7.npy
   [X7] Total device time: 40s
  [14:50:22] X7 done.
- Temp file removed for M7: \AppData\Local\Temp\tmph_1ep0sz.pcapng
- Temp file removed for X7: \AppData\Local\Temp\tmpkxun78q2.pcapng
- Temp file removed for X300: \AppData\Local\Temp\tmp1r2lfm_z.pcapng
+ Temp file removed for M7: C:\Users\ghosty\AppData\Local\Temp\tmph_1ep0sz.pcapng
+ Temp file removed for X7: C:\Users\ghosty\AppData\Local\Temp\tmpkxun78q2.pcapng
+ Temp file removed for X300: C:\Users\ghosty\AppData\Local\Temp\tmp1r2lfm_z.pcapng
 
 ============================================================
 
@@ -66,9 +67,9 @@
  Trace    : stationary.pcapng
  Scenario : stationary
 ────────────────────────────────────────────────────────────
- Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmpkir9im7u.pcapng
- Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmp81ny0nx5.pcapng
- Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmprgr0l6nm.pcapng
+ Pre-filtering BFI for M7 -> C:\Users\ghosty\AppData\Local\Temp\tmpkir9im7u.pcapng
+ Pre-filtering BFI for X7 -> C:\Users\ghosty\AppData\Local\Temp\tmp81ny0nx5.pcapng
+ Pre-filtering BFI for X300 -> C:\Users\ghosty\AppData\Local\Temp\tmprgr0l6nm.pcapng
  Pre-filter done [1m 02s]  2624.8 MB -> 0.3 MB (0.0% of original)
  Pre-filter done [1m 02s]  2624.8 MB -> 0.4 MB (0.0% of original)
  Pre-filter done [1m 03s]  2624.8 MB -> 0.4 MB (0.0% of original)
@@ -110,9 +111,9 @@
   [X300] Saved 373 V-matrices -> ./data\X300\vmatrix_stationary_X300.npy
   [X300] Total device time: 34s
  [14:52:01] X300 done.
- Temp file removed for M7: \AppData\Local\Temp\tmpkir9im7u.pcapng
- Temp file removed for X7: \AppData\Local\Temp\tmp81ny0nx5.pcapng
- Temp file removed for X300: \AppData\Local\Temp\tmprgr0l6nm.pcapng
+ Temp file removed for M7: C:\Users\ghosty\AppData\Local\Temp\tmpkir9im7u.pcapng
+ Temp file removed for X7: C:\Users\ghosty\AppData\Local\Temp\tmp81ny0nx5.pcapng
+ Temp file removed for X300: C:\Users\ghosty\AppData\Local\Temp\tmprgr0l6nm.pcapng
 
 ============================================================
 
@@ -120,9 +121,9 @@
  Trace    : moving.pcapng
  Scenario : moving
 ────────────────────────────────────────────────────────────
- Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmp35i35nnw.pcapng
- Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmp29tgbdx0.pcapng
- Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmpuv07236f.pcapng
+ Pre-filtering BFI for X7 -> C:\Users\ghosty\AppData\Local\Temp\tmp35i35nnw.pcapng
+ Pre-filtering BFI for M7 -> C:\Users\ghosty\AppData\Local\Temp\tmp29tgbdx0.pcapng
+ Pre-filtering BFI for X300 -> C:\Users\ghosty\AppData\Local\Temp\tmpuv07236f.pcapng
  Pre-filter done [1m 04s]  2652.8 MB -> 0.2 MB (0.0% of original)
  Pre-filter done [1m 04s]  2652.8 MB -> 1.5 MB (0.1% of original)
  Pre-filter done [1m 04s]  2652.8 MB -> 0.3 MB (0.0% of original)
@@ -163,9 +164,9 @@
   [X7] Saved 1440 V-matrices -> ./data\X7\vmatrix_moving_X7.npy
   [X7] Total device time: 53s
  [14:53:59] X7 done.
- Temp file removed for M7: \AppData\Local\Temp\tmp29tgbdx0.pcapng
- Temp file removed for X7: \AppData\Local\Temp\tmp35i35nnw.pcapng
- Temp file removed for X300: \AppData\Local\Temp\tmpuv07236f.pcapng
+ Temp file removed for M7: C:\Users\ghosty\AppData\Local\Temp\tmp29tgbdx0.pcapng
+ Temp file removed for X7: C:\Users\ghosty\AppData\Local\Temp\tmp35i35nnw.pcapng
+ Temp file removed for X300: C:\Users\ghosty\AppData\Local\Temp\tmpuv07236f.pcapng
 
 ============================================================
 
@@ -173,9 +174,9 @@
  Trace    : empty-2.pcapng
  Scenario : empty-2
 ────────────────────────────────────────────────────────────
- Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmpckzv7l8c.pcapng
- Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmpvecfbea2.pcapng
- Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmpgtvi1511.pcapng
+ Pre-filtering BFI for X7 -> C:\Users\ghosty\AppData\Local\Temp\tmpckzv7l8c.pcapng
+ Pre-filtering BFI for M7 -> C:\Users\ghosty\AppData\Local\Temp\tmpvecfbea2.pcapng
+ Pre-filtering BFI for X300 -> C:\Users\ghosty\AppData\Local\Temp\tmpgtvi1511.pcapng
  Pre-filter done [1m 04s]  2669.0 MB -> 0.3 MB (0.0% of original)
  Pre-filter done [1m 05s]  2669.0 MB -> 0.4 MB (0.0% of original)
  Pre-filter done [1m 05s]  2669.0 MB -> 0.4 MB (0.0% of original)
@@ -216,9 +217,9 @@
   [X7] Saved 364 V-matrices -> ./data\X7\vmatrix_empty-2_X7.npy
   [X7] Total device time: 34s
  [14:55:39] X7 done.
- Temp file removed for M7: \AppData\Local\Temp\tmpvecfbea2.pcapng
- Temp file removed for X7: \AppData\Local\Temp\tmpckzv7l8c.pcapng
- Temp file removed for X300: \AppData\Local\Temp\tmpgtvi1511.pcapng
+ Temp file removed for M7: C:\Users\ghosty\AppData\Local\Temp\tmpvecfbea2.pcapng
+ Temp file removed for X7: C:\Users\ghosty\AppData\Local\Temp\tmpckzv7l8c.pcapng
+ Temp file removed for X300: C:\Users\ghosty\AppData\Local\Temp\tmpgtvi1511.pcapng
 
 ============================================================
 
@@ -226,9 +227,9 @@
  Trace    : stationary-2.pcapng
  Scenario : stationary-2
 ────────────────────────────────────────────────────────────
- Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmpej106cpm.pcapng
- Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmpx8_zvt0b.pcapng
- Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmp5nacuufu.pcapng
+ Pre-filtering BFI for X7 -> C:\Users\ghosty\AppData\Local\Temp\tmpej106cpm.pcapng
+ Pre-filtering BFI for X300 -> C:\Users\ghosty\AppData\Local\Temp\tmpx8_zvt0b.pcapng
+ Pre-filtering BFI for M7 -> C:\Users\ghosty\AppData\Local\Temp\tmp5nacuufu.pcapng
  Pre-filter done [58s]  2544.7 MB -> 0.4 MB (0.0% of original)
  Pre-filter done [59s]  2544.7 MB -> 0.3 MB (0.0% of original)
  Pre-filter done [59s]  2544.7 MB -> 0.4 MB (0.0% of original)
@@ -269,9 +270,9 @@
   [X7] Saved 359 V-matrices -> ./data\X7\vmatrix_stationary-2_X7.npy
   [X7] Total device time: 26s
  [14:57:04] X7 done.
- Temp file removed for M7: \AppData\Local\Temp\tmp5nacuufu.pcapng
- Temp file removed for X7: \AppData\Local\Temp\tmpej106cpm.pcapng
- Temp file removed for X300: \AppData\Local\Temp\tmpx8_zvt0b.pcapng
+ Temp file removed for M7: C:\Users\ghosty\AppData\Local\Temp\tmp5nacuufu.pcapng
+ Temp file removed for X7: C:\Users\ghosty\AppData\Local\Temp\tmpej106cpm.pcapng
+ Temp file removed for X300: C:\Users\ghosty\AppData\Local\Temp\tmpx8_zvt0b.pcapng
 
 ============================================================
 
@@ -279,9 +280,9 @@
  Trace    : moving-2.pcapng
  Scenario : moving-2
 ────────────────────────────────────────────────────────────
- Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmplr1e6155.pcapng
- Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmpxz07d60g.pcapng
- Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmp4_kqvrny.pcapng
+ Pre-filtering BFI for M7 -> C:\Users\ghosty\AppData\Local\Temp\tmplr1e6155.pcapng
+ Pre-filtering BFI for X7 -> C:\Users\ghosty\AppData\Local\Temp\tmpxz07d60g.pcapng
+ Pre-filtering BFI for X300 -> C:\Users\ghosty\AppData\Local\Temp\tmp4_kqvrny.pcapng
  Pre-filter done [52s]  2617.6 MB -> 0.3 MB (0.0% of original)
  Pre-filter done [53s]  2617.6 MB -> 0.4 MB (0.0% of original)
  Pre-filter done [53s]  2617.6 MB -> 0.4 MB (0.0% of original)
@@ -322,9 +323,9 @@
   [X300] Saved 365 V-matrices -> ./data\X300\vmatrix_moving-2_X300.npy
   [X300] Total device time: 32s
  [14:58:30] X300 done.
- Temp file removed for M7: \AppData\Local\Temp\tmplr1e6155.pcapng
- Temp file removed for X7: \AppData\Local\Temp\tmpxz07d60g.pcapng
- Temp file removed for X300: \AppData\Local\Temp\tmp4_kqvrny.pcapng
+ Temp file removed for M7: C:\Users\ghosty\AppData\Local\Temp\tmplr1e6155.pcapng
+ Temp file removed for X7: C:\Users\ghosty\AppData\Local\Temp\tmpxz07d60g.pcapng
+ Temp file removed for X300: C:\Users\ghosty\AppData\Local\Temp\tmp4_kqvrny.pcapng
 
 ============================================================
 
@@ -332,9 +333,9 @@
  Trace    : empty-3.pcapng
  Scenario : empty-3
 ────────────────────────────────────────────────────────────
- Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmps76hleoy.pcapng
- Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmpiktgi6vg.pcapng
- Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmpens6_8iu.pcapng
+ Pre-filtering BFI for M7 -> C:\Users\ghosty\AppData\Local\Temp\tmps76hleoy.pcapng
+ Pre-filtering BFI for X7 -> C:\Users\ghosty\AppData\Local\Temp\tmpiktgi6vg.pcapng
+ Pre-filtering BFI for X300 -> C:\Users\ghosty\AppData\Local\Temp\tmpens6_8iu.pcapng
  Pre-filter done [55s]  2703.5 MB -> 0.8 MB (0.0% of original)
  Pre-filter done [55s]  2703.5 MB -> 0.3 MB (0.0% of original)
  Pre-filter done [55s]  2703.5 MB -> 0.3 MB (0.0% of original)
@@ -375,9 +376,9 @@
   [X7] Saved 684 V-matrices -> ./data\X7\vmatrix_empty-3_X7.npy
   [X7] Total device time: 30s
  [14:59:56] X7 done.
- Temp file removed for M7: \AppData\Local\Temp\tmps76hleoy.pcapng
- Temp file removed for X7: \AppData\Local\Temp\tmpiktgi6vg.pcapng
- Temp file removed for X300: \AppData\Local\Temp\tmpens6_8iu.pcapng
+ Temp file removed for M7: C:\Users\ghosty\AppData\Local\Temp\tmps76hleoy.pcapng
+ Temp file removed for X7: C:\Users\ghosty\AppData\Local\Temp\tmpiktgi6vg.pcapng
+ Temp file removed for X300: C:\Users\ghosty\AppData\Local\Temp\tmpens6_8iu.pcapng
 
 ============================================================
 
@@ -385,9 +386,9 @@
  Trace    : stationary-3.pcapng
  Scenario : stationary-3
 ────────────────────────────────────────────────────────────
- Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmp7bel_ery.pcapng
- Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmpr42hvdus.pcapng
- Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmp02dtl_bx.pcapng
+ Pre-filtering BFI for M7 -> C:\Users\ghosty\AppData\Local\Temp\tmp7bel_ery.pcapng
+ Pre-filtering BFI for X7 -> C:\Users\ghosty\AppData\Local\Temp\tmpr42hvdus.pcapng
+ Pre-filtering BFI for X300 -> C:\Users\ghosty\AppData\Local\Temp\tmp02dtl_bx.pcapng
  Pre-filter done [49s]  2527.1 MB -> 0.4 MB (0.0% of original)
  Pre-filter done [49s]  2527.1 MB -> 0.8 MB (0.0% of original)
  Pre-filter done [50s]  2527.1 MB -> 0.3 MB (0.0% of original)
@@ -428,9 +429,9 @@
   [X7] Saved 543 V-matrices -> ./data\X7\vmatrix_stationary-3_X7.npy
   [X7] Total device time: 30s
  [15:01:17] X7 done.
- Temp file removed for M7: \AppData\Local\Temp\tmp7bel_ery.pcapng
- Temp file removed for X7: \AppData\Local\Temp\tmpr42hvdus.pcapng
- Temp file removed for X300: \AppData\Local\Temp\tmp02dtl_bx.pcapng
+ Temp file removed for M7: C:\Users\ghosty\AppData\Local\Temp\tmp7bel_ery.pcapng
+ Temp file removed for X7: C:\Users\ghosty\AppData\Local\Temp\tmpr42hvdus.pcapng
+ Temp file removed for X300: C:\Users\ghosty\AppData\Local\Temp\tmp02dtl_bx.pcapng
 
 ============================================================
 
@@ -438,9 +439,9 @@
  Trace    : moving-3.pcapng
  Scenario : moving-3
 ────────────────────────────────────────────────────────────
- Pre-filtering BFI for M7 -> \AppData\Local\Temp\tmpe4qj2jhl.pcapng
- Pre-filtering BFI for X7 -> \AppData\Local\Temp\tmpivvlry8v.pcapng
- Pre-filtering BFI for X300 -> \AppData\Local\Temp\tmptb26fvb_.pcapng
+ Pre-filtering BFI for M7 -> C:\Users\ghosty\AppData\Local\Temp\tmpe4qj2jhl.pcapng
+ Pre-filtering BFI for X7 -> C:\Users\ghosty\AppData\Local\Temp\tmpivvlry8v.pcapng
+ Pre-filtering BFI for X300 -> C:\Users\ghosty\AppData\Local\Temp\tmptb26fvb_.pcapng
  Pre-filter done [59s]  2734.1 MB -> 0.3 MB (0.0% of original)
  Pre-filter done [59s]  2734.1 MB -> 0.3 MB (0.0% of original)
  Pre-filter done [59s]  2734.1 MB -> 20.0 MB (0.7% of original)
@@ -481,9 +482,9 @@
   [X7] Saved 18159 V-matrices -> ./data\X7\vmatrix_moving-3_X7.npy
   [X7] Total device time: 12m 02s
  [15:14:19] X7 done.
- Temp file removed for M7: \AppData\Local\Temp\tmpe4qj2jhl.pcapng
- Temp file removed for X7: \AppData\Local\Temp\tmpivvlry8v.pcapng
- Temp file removed for X300: \AppData\Local\Temp\tmptb26fvb_.pcapng
+ Temp file removed for M7: C:\Users\ghosty\AppData\Local\Temp\tmpe4qj2jhl.pcapng
+ Temp file removed for X7: C:\Users\ghosty\AppData\Local\Temp\tmpivvlry8v.pcapng
+ Temp file removed for X300: C:\Users\ghosty\AppData\Local\Temp\tmptb26fvb_.pcapng
 
 ============================================================
 
